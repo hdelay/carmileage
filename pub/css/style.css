@@ -333,7 +333,7 @@ aside ul ul li:hover a {
     width: calc(100% - 255px);
 }
 .content_box {
-    padding: 25px 50px;
+    padding: 25px 50px 50px;
     box-sizing: border-box;
     min-height: calc(100vh - 155px - 65px);
 }

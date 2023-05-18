@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>승용차 마일리지 관리자시스템</title>
+
+    <!-- pub css -->
+    <link rel="stylesheet" href="../css/datepicker.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<div class="wrap">
+
+    <!-- header -->
+    <header>
+
+        <div class="top">
+            <div class="logo">
+                <h1><a href="">승용차 마일리지</a></h1>
+                <span>승용차 마일리지 관리자시스템</span>
+            </div>
+    
+            <div class="util_box">
+                <ul>
+                    <li class="alarm on">
+                        <a href="" title=""><span></span>해야할 일</a>
+                        <div class="alarm_list">
+                            <dl>
+                                <dt>권한부여</dt>
+                                <dd>2</dd>
+                            </dl>
+                            <dl>
+                                <dt>최초 주행거리</dt>
+                                <dd>162</dd>
+                            </dl>
+                            <dl>
+                                <dt>실적 주행거리</dt>
+                                <dd>602</dd>
+                            </dl>
+                            <dl>
+                                <dt>차량정보 변경</dt>
+                                <dd>13</dd>
+                            </dl>
+                            <dl>
+                                <dt>마일리지 대상자</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>마일리지 지급</dt>
+                                <dd>77</dd>
+                            </dl>
+                            <dl>
+                                <dt>계절관리제 주행거리</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="refresh"><a href="" title="새로고침"><span></span>새로고침</a></li>
+                    <li class="myinfo">
+                        <a href=""><span></span>관리자</a><span>님 환영합니다.</span>
+                        <div class="myinfo_list">
+                            <ul>
+                                <li class="edit"><a href=""><span></span>개인정보 수정</a></li>
+                                <li class="logout"><a href=""><span></span>로그아웃</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <div class="highlight"></div>
+            <ul>
+                <li class="on"><a href="">회원/차량 찾기</a></li>
+                <li><a href="">회원/차량 관리</a></li>
+                <li><a href="">주행거리 관리</a></li>
+                <li><a href="">마일리지 관리</a></li>
+                <li><a href="">평가 기준 관리</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- //header -->
+
+    <!-- main_box -->
+    <div class="main_box">
+
+        <!-- nav -->
+        <aside>
+            <h2><span></span>회원/차량 찾기</h2>
+            <ul>
+                <li><a href="./cm-0010.html">통합에코 회원 찾기</a></li>
+                <li><a href="./cm-0011.html">승용차 회원 찾기</a></li>
+                <li class="on"><a href="./cm-0013.html">차량 찾기</a></li>
+            </ul>
+        </aside>
+        <!-- //nav -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- content_box -->
+            <div class="content_box">
+
+                <!-- 위치 -->
+                <div class="location">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">회원/차량 찾기</a></li>
+                        <li><a href="">차량 찾기</a></li>
+                    </ul>
+                </div>
+
+                <!-- 페이지 제목 -->
+                <div class="tit_box">
+                    <h3>차량 상세 정보</h3>
+                </div>
+
+                <!-- 제목 -->
+                <div class="tit_box between mt40 mb10">
+                    <h4>차량별 참여현황 정보</h4>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="tbl_box td_left">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="35%">
+                            <col width="15%">
+                            <col width="35%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><label for="">통합에코 아이디</label></th>
+                                <td>itgmemberid</td>
+                                <th scope="row"><label for="">등록구/동<label></th>
+                                <td>은평구 신사제1동</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">가입경로</label></th>
+                                <td>온라인 가입(2023-04-01)</td>
+                                <th scope="row"><label for="">차량 소유주명<label></th>
+                                <td>홍길동(준회원)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">생년월일</label></th>
+                                <td>1972-02-02</td>
+                                <th scope="row"><label for="">성별<label></th>
+                                <td>남자</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="">휴대폰번호</label></th>
+                                <td>
+                                    <div class="txt_group">
+                                        <span>010-1234-5678</span>
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="chk_01" class="checked" disabled>
+                                                <label for="chk_01">SMS 수신동의[필수]</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row"><label for="">연락처<label></th>
+                                <td>02-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="inp_04">이메일</label></th>
+                                <td colspan="3">
+                                    <div class="txt_group">
+                                        <span>itgmber_id@naver.com</span>
+                                        <div class="chk_box">
+                                            <span>
+                                                <input type="checkbox" id="chk_01" class="checked" disabled>
+                                                <label for="chk_01">이메일 수신동의[선택]</label>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><label for="inp_04">주소</label></th>
+                                <td colspan="3">12345 서울시 중구 덕수궁길 15, 서소문별관 1동 11층</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 제목 -->
+                <div class="tit_box between mt40 mb10">
+                    <h4>국토교통부 자동차관리정보시스템 데이터</h4>
+                    <span class="tbl_txt">※ 주행거리는 기준일에 따라 현재 주행거리 데이터와 차이가 있을 수 있습니다.</span>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="tbl_box">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">차종</th>
+                                <th scope="col">차량번호</th>
+                                <th scope="col">주행거리</th>
+                                <th scope="col">등록일자</th>
+                                <th scope="col">기준일자(최종수정일자)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>승용</td>
+                                <td>SM6</td>
+                                <td>15머3065</td>
+                                <td>89,123</td>
+                                <td>-</td>
+                                <td>2022-04-01</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 제목 -->
+                <div class="tit_box between mt40 mb10">
+                    <h4>정기주행거리 참여 현황</h4>
+                    <div class="btn_box">
+                        <a href="" class="btn_blue">정기 주행거리 등록</a>
+                    </div>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="tbl_box">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="120px">
+                            <col width="120px">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">구분</th>
+                                <th scope="col">차량구분</th>
+                                <th scope="col">차종</th>
+                                <th scope="col">번호판 사진</th>
+                                <th scope="col">계기판 사진</th>
+                                <th scope="col">주행거리</th>
+                                <th scope="col">등록일<br/>기준일</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">승인자</th>
+                                <th scope="col">승인일자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>최초</td>
+                                <td>승용</td>
+                                <td>SM6</td>
+                                <td><div class="img"><img src="../images/content/img_carnum01.png" alt="차량 번호판 사진"></div></td>
+                                <td><div class="img"><img src="../images/content/img_carnum02.png" alt="차량 계기판 사진"></div></div></td>
+                                <td>90,223</td>
+                                <td>2022-04-01<br/>2022-04-01</td>
+                                <td>승인완료</td>
+                                <td>김민수/은평구</td>
+                                <td>2022-04-02</td>
+                            </tr>
+                            <tr>
+                                <td colspan="11">
+                                    <strong>실적 주행거리 등록기간은 2024-04-02 ~ 2024-05-02입니다.</strong><br/>
+                                    전출, 폐차 등의 부득이한 경우 참여 9개월 이상부터 실적 등록이 가능합니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- 제목 -->
+                <div class="tit_box between mt40 mb10">
+                    <h4>계절관리제 참여 현황</h4>
+                    <div class="btn_box">
+                        <a href="" class="btn_blue">계절관리제 등록</a>
+                    </div>
+                </div>
+
+                <!-- 테이블 -->
+                <div class="tbl_box">
+                    <table>
+                        <caption>테이블</caption>
+                        <colgroup>
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="120px">
+                            <col width="120px">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                            <col width="">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">구분</th>
+                                <th scope="col">차량구분</th>
+                                <th scope="col">차종</th>
+                                <th scope="col">번호판 사진</th>
+                                <th scope="col">계기판 사진</th>
+                                <th scope="col">주행거리</th>
+                                <th scope="col">등록일<br/>기준일</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">승인자</th>
+                                <th scope="col">승인일자</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>최초</td>
+                                <td>승용</td>
+                                <td>SM6</td>
+                                <td><div class="img"><img src="../images/content/img_carnum01.png" alt="차량 번호판 사진"></div></td>
+                                <td><div class="img"><img src="../images/content/img_carnum02.png" alt="차량 계기판 사진"></div></div></td>
+                                <td>90,223</td>
+                                <td>2022-04-01<br/>2022-04-01</td>
+                                <td>승인완료</td>
+                                <td>김민수/은평구</td>
+                                <td>2022-04-02</td>
+                            </tr>
+                            <tr>
+                                <td colspan="11">
+                                    <strong>계절관리제 종료주행거리 등록기간은 2023.04.01 ~ 2023.04.30 입니다.</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- //content_box -->
+
+            <!-- footer -->
+            <footer>04515 서울특별시 중구 덕수궁길 15 서소문별관 1동 11층 친환경건물과 ⓒ Seoul Metropolitan Fovernment all rights reserved.</footer>
+            <!-- //footer -->
+
+        </div>
+        <!-- //container -->
+
+    </div>
+    <!-- //main_box -->
+
+</div>
+
+<!-- pub js -->
+<script src="../js/datepicker-full.min.js" defer></script>
+<script src="../js/common.js" defer></script>
+
+</body>
+</html>

@@ -159,21 +159,41 @@
                                             <th scope="row"><label for="">생년월일</label></th>
                                             <td>1972-02-02</td>
                                             <th scope="row"><label for="">성별<label></th>
-                                            <td></td>
+                                            <td>남자</td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><label for="">휴대폰번호</label></th>
-                                            <td></td>
+                                            <td>
+                                                <div class="txt_group">
+                                                    <span>010-1234-5678</span>
+                                                    <div class="chk_box">
+                                                        <span>
+                                                            <input type="checkbox" id="chk_01" class="checked" disabled>
+                                                            <label for="chk_01">SMS 수신동의[필수]</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
                                             <th scope="row"><label for="">연락처<label></th>
-                                            <td></td>
+                                            <td>02-1234-5678</td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><label for="inp_04">이메일</label></th>
-                                            <td colspan="3"></td>
+                                            <td colspan="3">
+                                                <div class="txt_group">
+                                                    <span>itgmber_id@naver.com</span>
+                                                    <div class="chk_box">
+                                                        <span>
+                                                            <input type="checkbox" id="chk_01" class="checked" disabled>
+                                                            <label for="chk_01">이메일 수신동의[선택]</label>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><label for="inp_04">주소</label></th>
-                                            <td colspan="3"></td>
+                                            <td colspan="3">12345 서울시 중구 덕수궁길 15, 서소문별관 1동 11층</td>
                                         </tr>
                                         <tr>
                                             <th scope="row"><label for="inp_05">개인정보 수정이력</label></th>
@@ -257,17 +277,513 @@
                         </div>
                       
                         <div class="tab_content tab2">
-                          <h3>탭 2 내용</h3>
-                          <p>이곳에 탭 2의 내용을 입력하세요.</p>
-                        </div>
-                      
-                        <div class="tab_content tab3">
+                          
+                            <!-- 테이블 -->
+                            <div class="tbl_box td_left">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="35%">
+                                        <col width="15%">
+                                        <col width="35%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><label for="">통합에코 아이디</label></th>
+                                            <td>itgmemberid</td>
+                                            <th scope="row"><label for="">회원명<label></th>
+                                            <td>홍길동(준회원)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="">보유차량 수</label></th>
+                                            <td colspan="3">3대</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 제목 -->
+                            <div class="tit_box mt40 mb10">
+                                <h4>등록차량 정보</h4>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="5%">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">차종</th>
+                                            <th scope="col">차량번호</th>
+                                            <th scope="col">최초주행거리(㎞)</th>
+                                            <th scope="col">등록일자</th>
+                                            <th scope="col">기준일자(최종수정일자)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>승용</td>
+                                            <td>SM6</td>
+                                            <td>15머3065</td>
+                                            <td>89,123</td>
+                                            <td>2022-04-01</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>승용</td>
+                                            <td>XC40</td>
+                                            <td>115가1324</td>
+                                            <td>10,005</td>
+                                            <td>2022-04-25</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span class="txt_red">말소<br/>(2023-01-20)</span></td>
+                                            <td>SM6</td>
+                                            <td>12노8548</td>
+                                            <td>35,123</td>
+                                            <td>2022-01-05</td>
+                                            <td>2023-01-25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tit_box between mt40 mb10">
+                                <h4>차량별 참여현황 정보</h4>
+                                <span class="tbl_txt">기준일자: 2023-04-28</span>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="5%">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="12%">
+                                        <col width="12%">
+                                        <col width="12%">
+                                        <col width="12%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" rowspan="2">번호</th>
+                                            <th scope="col" rowspan="2">구분</th>
+                                            <th scope="col" rowspan="2">차종</th>
+                                            <th scope="col" rowspan="2">차량번호</th>
+                                            <th scope="col" rowspan="2">등록일</th>
+                                            <th scope="col" rowspan="2">수정일</th>
+                                            <th scope="col" colspan="2">정기 마일리지</th>
+                                            <th scope="col" colspan="2">계절관리제</th>
+                                        </tr>
+                                        <tr>
+                                            <th scope="col">최초 주행거리</th>
+                                            <th scope="col">실적 주행거리</th>
+                                            <th scope="col">시작 주행거리</th>
+                                            <th scope="col">종료 주행거리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>승용</td>
+                                            <td>SM6</td>
+                                            <td>15머3065</td>
+                                            <td>2022-04-01</td>
+                                            <td>-</td>
+                                            <td>
+                                                2022-04-01<br/>
+                                                <div class="state green mt5">등록 완료</div>
+                                            </td>
+                                            <td>
+                                                2022-04-01 ~ 2024-04-30<br/>
+                                                <div class="state gray mt5">시기 미도래</div>
+                                            </td>
+                                            <td>
+                                                2022-04-01<br/>
+                                                <div class="state green mt5">등록 완료</div>
+                                            </td>
+                                            <td>
+                                                2023-04-01 ~ 2023-04-30<br/>
+                                                <div class="state blue mt5">등록 대상</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>승용</td>
+                                            <td>XC40</td>
+                                            <td>115가1234</td>
+                                            <td>2022-04-01</td>
+                                            <td>-</td>
+                                            <td>
+                                                -<br/>
+                                                <div class="state blue mt5">등록 대상</div>
+                                            </td>
+                                            <td>
+                                                2022-04-01<br/>
+                                                <div class="state gray mt5">시기 미도래</div>
+                                            </td>
+                                            <td>
+                                                -<br/>
+                                                <div class="state gray mt5">미대상</div>
+                                            </td>
+                                            <td>
+                                                -<br/>
+                                                <div class="state gray mt5">미대상</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>승용</td>
+                                            <td>SM6</td>
+                                            <td>12노8548</td>
+                                            <td>2022-04-01</td>
+                                            <td>2023-01-25</td>
+                                            <td>
+                                                2022-04-01<br/>
+                                                <div class="state green mt5">등록 완료</div>
+                                            </td>
+                                            <td>
+                                                2022-04-01 ~ 2023-02-04<br/>
+                                                <div class="state blue mt5">등록 대상</div>
+                                            </td>
+                                            <td>
+                                                2022-12-15<br/>
+                                                <div class="state green mt5">등록 완료</div>
+                                            </td>
+                                            <td>
+                                                -<br/>
+                                                <div class="state gray mt5">시기 미도래</div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             
                         </div>
                       
+                        <div class="tab_content tab3">
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box td_left">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="35%">
+                                        <col width="15%">
+                                        <col width="35%">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"><label for="">통합에코 아이디</label></th>
+                                            <td>itgmemberid</td>
+                                            <th scope="row"><label for="">회원명<label></th>
+                                            <td>홍길동(준회원)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><label for="">보유차량 수</label></th>
+                                            <td colspan="3">3대</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 제목 -->
+                            <div class="tit_box mt40 mb10">
+                                <h4>보유 차량별 참여현황 정보</h4>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box cursor">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="5%">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">차종</th>
+                                            <th scope="col">차량번호</th>
+                                            <th scope="col">최초주행거리(㎞)</th>
+                                            <th scope="col">등록일자</th>
+                                            <th scope="col">기준일자(최종수정일자)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>승용</td>
+                                            <td>SM6</td>
+                                            <td>15머3065</td>
+                                            <td>89,123</td>
+                                            <td>2022-04-01</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>승용</td>
+                                            <td>XC40</td>
+                                            <td>115가1324</td>
+                                            <td>10,005</td>
+                                            <td>2022-04-25</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td><span class="txt_red">말소<br/>(2023-01-20)</span></td>
+                                            <td>SM6</td>
+                                            <td>12노8548</td>
+                                            <td>35,123</td>
+                                            <td>2022-01-05</td>
+                                            <td>2023-01-25</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- 데이터없음 -->
+                            <div class="no_data">
+                                <div class="txt">선택된 차량이 없습니다.<br/>보유 차량별 참여현황 정보의 차량을 선택하여 주세요.</div>
+                            </div>
+
+                            <div class="tit_box between mt40 mb10">
+                                <h4>국토교통부 자동차관리정보시스템 데이터</h4>
+                                <span class="tbl_txt">※ 국토교통부 차량 정보 및 주행거리는 기준일에 따라 현재 주행거리 데이터와 차이가 있을 수 있습니다.</span>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">구분</th>
+                                            <th scope="col">차종</th>
+                                            <th scope="col">차량번호</th>
+                                            <th scope="col">최초주행거리(㎞)</th>
+                                            <th scope="col">등록일자</th>
+                                            <th scope="col">기준일자(최종수정일자)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>승용</td>
+                                            <td>SM6</td>
+                                            <td>15머3065</td>
+                                            <td>89,123</td>
+                                            <td>2022-04-01</td>
+                                            <td>2017-06-24</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tit_box between mt40 mb10">
+                                <h4>정기마일리지 주행거리</h4>
+                                <div class="btn_box">
+                                    <a href="" class="btn_blue">정기 주행거리 등록</a>
+                                </div>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">연도</th>
+                                            <th scope="col">기간</th>
+                                            <th scope="col">기준주행거리(㎞)</th>
+                                            <th scope="col">실적주행거리(㎞)</th>
+                                            <th scope="col">주행일수</th>
+                                            <th scope="col">연간주행거리(㎞)</th>
+                                            <th scope="col">감축률(%)</th>
+                                            <th scope="col">감축량(㎞)</th>
+                                            <th scope="col">탄소배출량(CO²)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2020</td>
+                                            <td>2020-01-05 ~ 2020-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2021</td>
+                                            <td>2021-01-05 ~ 2022-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td>367</td>
+                                            <td>6,895</td>
+                                            <td>70</td>
+                                            <td>2,916</td>
+                                            <td>589</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022</td>
+                                            <td>2022-01-05 ~ 2023-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td>377</td>
+                                            <td>4,447</td>
+                                            <td>46</td>
+                                            <td>5,121</td>
+                                            <td>244</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2023</td>
+                                            <td>2023-01-05 ~ 2024-01-04</td>
+                                            <td>9,920</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tit_box between mt40 mb10">
+                                <h4>계정관리제 주행거리</h4>
+                                <div class="btn_box">
+                                    <a href="" class="btn_blue">정기 주행거리 등록</a>
+                                </div>
+                            </div>
+
+                            <!-- 테이블 -->
+                            <div class="tbl_box">
+                                <table>
+                                    <caption>테이블</caption>
+                                    <colgroup>
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                        <col width="">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">연도</th>
+                                            <th scope="col">기간</th>
+                                            <th scope="col">기준주행거리(㎞)</th>
+                                            <th scope="col">실적주행거리(㎞)</th>
+                                            <th scope="col">주행일수</th>
+                                            <th scope="col">연간주행거리(㎞)</th>
+                                            <th scope="col">감축률(%)</th>
+                                            <th scope="col">감축량(㎞)</th>
+                                            <th scope="col">탄소배출량(CO²)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2020</td>
+                                            <td>2020-01-05 ~ 2020-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2021</td>
+                                            <td>2021-01-05 ~ 2022-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td>367</td>
+                                            <td>6,895</td>
+                                            <td>70</td>
+                                            <td>2,916</td>
+                                            <td>589</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2022</td>
+                                            <td>2022-01-05 ~ 2023-01-04</td>
+                                            <td>9,920</td>
+                                            <td>35,256</td>
+                                            <td>377</td>
+                                            <td>4,447</td>
+                                            <td>46</td>
+                                            <td>5,121</td>
+                                            <td>244</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="txtlist_box">
+                                <ul>
+                                    <li>※ 감축률(%) : (기준 주행거리 - 해당연도 주행거리) / 기준 주행거리 *100</li>
+                                    <li>※ 감축량(Km) : 기준 주행거리 - 해당연도 주행거리</li>
+                                    <li>※ 기준 주행거리(최초가입, 등록 1년 이상) : 최초 자동차등록일로부터 최초 누적주행거리 제출일까지의 연평균 주행거리</li>
+                                    <li>※ 기준 주행거리(최초가입, 등록 1년 미만) : 가입일 기준 기준 전년도 교통안전공단 공표 서울시 자동차 평균주행거리</li>
+                                    <li>※ 기준 주행거리(2년차 이후) : 최근에 감축마일리지 지급년도 주행거리(단, 감축 마일리지 실적이 없는 경우 최초 가입년도의 기준주행거리)</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                      
                         <div class="tab_content tab4">
-                          <h3>탭 4 내용</h3>
-                          <p>이곳에 탭 3의 내용을 입력하세요.</p>
+                            내용없음
                         </div>
                     </div>
                 </div>
