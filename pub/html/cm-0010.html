@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>승용차 마일리지 관리자시스템</title>
+
+    <!-- pub css -->
+    <link rel="stylesheet" href="../css/datepicker.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<div class="wrap">
+
+    <!-- header -->
+    <header>
+
+        <div class="top">
+            <div class="logo">
+                <h1><a href="">승용차 마일리지</a></h1>
+                <span>승용차 마일리지 관리자시스템</span>
+            </div>
+    
+            <div class="util_box">
+                <ul>
+                    <li class="alarm on">
+                        <a href="" title=""><span></span>해야할 일</a>
+                        <div class="alarm_list">
+                            <dl>
+                                <dt>권한부여</dt>
+                                <dd>2</dd>
+                            </dl>
+                            <dl>
+                                <dt>최초 주행거리</dt>
+                                <dd>162</dd>
+                            </dl>
+                            <dl>
+                                <dt>실적 주행거리</dt>
+                                <dd>602</dd>
+                            </dl>
+                            <dl>
+                                <dt>차량정보 변경</dt>
+                                <dd>13</dd>
+                            </dl>
+                            <dl>
+                                <dt>마일리지 대상자</dt>
+                                <dd>0</dd>
+                            </dl>
+                            <dl>
+                                <dt>마일리지 지급</dt>
+                                <dd>77</dd>
+                            </dl>
+                            <dl>
+                                <dt>계절관리제 주행거리</dt>
+                                <dd>-</dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="refresh"><a href="" title="새로고침"><span></span>새로고침</a></li>
+                    <li class="myinfo">
+                        <a href=""><span></span>관리자</a><span>님 환영합니다.</span>
+                        <div class="myinfo_list">
+                            <ul>
+                                <li class="edit"><a href=""><span></span>개인정보 수정</a></li>
+                                <li class="logout"><a href=""><span></span>로그아웃</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <div class="highlight"></div>
+            <ul>
+                <li class="on"><a href="">회원/차량 찾기</a></li>
+                <li><a href="">회원/차량 관리</a></li>
+                <li><a href="">주행거리 관리</a></li>
+                <li><a href="">마일리지 관리</a></li>
+                <li><a href="">평가 기준 관리</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- //header -->
+
+    <!-- main_box -->
+    <div class="main_box">
+
+        <!-- nav -->
+        <aside>
+            <h2><span></span>회원/차량 찾기</h2>
+            <ul>
+                <li class="on"><a href="./cm-0010.html">통합에코 회원 찾기</a></li>
+                <li><a href="./cm-0011.html">승용차 회원 찾기</a></li>
+                <li><a href="./cm-0013.html">차량 찾기</a></li>
+            </ul>
+        </aside>
+        <!-- //nav -->
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- content_box -->
+            <div class="content_box">
+
+                <!-- 위치 -->
+                <div class="location">
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">회원/차량 찾기</a></li>
+                        <li><a href="">통합에코 회원 찾기</a></li>
+                    </ul>
+                </div>
+
+                <!-- 페이지 제목 -->
+                <div class="tit_box">
+                    <h3>통합에코 회원 찾기</h3>
+                </div>
+
+                <!-- 검색박스 -->
+                <div class="search_box">
+
+                    <div class="type_3">
+                        <dl>
+                            <dt><label for="sel_04">관할구/동</label></dt>
+                            <dd>
+                                <div class="form_box_group">
+                                    <div class="form_box">
+                                        <div class="sel_box">
+                                            <select>
+                                                <option value="">관할구 전체</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form_box">
+                                        <div class="sel_box">
+                                            <select>
+                                                <option value="">관할동 전체</option>
+                                                <option value="">전체</option>
+                                                <option value="">전체</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="inp_01">통합에코 아이디</label></dt>
+                            <dd>
+                                <div class="form_box">
+                                    <input type="text" id="inp_01">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="inp_02">승용차 아이디</label></dt>
+                            <dd>
+                                <div class="form_box">
+                                    <input type="text" id="inp_02">
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="type_3">
+                        <dl>
+                            <dt><label for="inp_03">회원명</label></dt>
+                            <dd>
+                                <div class="form_box">
+                                    <input type="text" id="inp_03">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="sel_04">휴대폰 번호</label></dt>
+                            <dd>
+                                <div class="form_box">
+                                    <input type="text" id="inp_04" placeholder="※ 하이픈(-)을 포함하여 정확하게 입력해주세요.">
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt><label for="inp_05">통합확정여부</label></dt>
+                            <dd>
+                                <div class="rdo_box type_2">
+                                    <span>
+                                        <input type="radio" id="radio_01" name="rdo_group_01" checked>
+                                        <label for="radio_01">전체</label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" id="radio_02" name="rdo_group_01">
+                                        <label for="radio_02">확정</label>
+                                    </span>
+                                    <span>
+                                        <input type="radio" id="radio_03" name="rdo_group_01">
+                                        <label for="radio_03">미확정</label>
+                                    </span>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <div class="btn_box_group right">
+                        <div class="btn_box">
+                            <button class="btn_gray">초기화</button>
+                        </div>
+                        <div class="btn_box">
+                            <button class="btn_black">검색</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 결과테이블 -->
+                <div class="tbl_group">
+
+                    <!-- 토탈 -->
+                    <div class="total mb10">회원 수 <strong>123,456</strong>명</div>
+                
+                    <!-- 테이블 -->
+                    <div class="tbl_box cursor">
+                        <table>
+                            <caption>테이블</caption>
+                            <colgroup>
+                                <col width="8%"/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                                <col width=""/>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col">No</th>
+                                    <th scope="col">통합에코아이디</th>
+                                    <th scope="col">에코아이디</th>
+                                    <th scope="col">승용차아이디</th>
+                                    <th scope="col">회원명</th>
+                                    <th scope="col">휴대폰번호</th>
+                                    <th scope="col">관할구</th>
+                                    <th scope="col">관할동</th>
+                                    <th scope="col">통합확정여부</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                                <tr>
+                                    <td>2,4222,392</td>
+                                    <td>itgmemberid</td>
+                                    <td>ecoid</td>
+                                    <td>carid</td>
+                                    <td>홍길동</td>
+                                    <td>010-2345-6894</td>
+                                    <td>은평구</td>
+                                    <td>신사제1동</td>
+                                    <td>확정</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 페이징 -->
+                    <div class="paging_box mt40 mb40">
+                        <ul>
+                            <li class="prev_all"><a href="" title="최신페이지로 이동"></a></li>
+                            <li class="prev"><a href="" title="이전페이지로 이동"></a></li>
+                            <li class="on"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li><a href="">6</a></li>
+                            <li class="next"><a href="" title="다음페이지로 이동"></a></li>
+                            <li class="next_all"><a href="" title="마지막페이지로 이동"></a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- //content_box -->
+
+            <!-- footer -->
+            <footer>04515 서울특별시 중구 덕수궁길 15 서소문별관 1동 11층 친환경건물과 ⓒ Seoul Metropolitan Fovernment all rights reserved.</footer>
+            <!-- //footer -->
+
+        </div>
+        <!-- //container -->
+
+    </div>
+    <!-- //main_box -->
+
+</div>
+
+<!-- pub js -->
+<script src="../js/datepicker-full.min.js" defer></script>
+<script src="../js/common.js" defer></script>
+
+</body>
+</html>
