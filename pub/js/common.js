@@ -65,7 +65,7 @@ links.forEach(link => {
     link.addEventListener('mouseleave', removeHighlight);
 });
 
-// 윈도우 크기가 1630이하가 되면 alarmBtn의 class 제거
+// 화면 크기가 1630이하가 되면 alarmBtn의 class 제거
 function removeOnClass() {
     const windowWidth = window.innerWidth;
   
